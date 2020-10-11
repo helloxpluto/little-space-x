@@ -16,7 +16,7 @@ header h2 {
     color: rgb(255, 196, 0);
 }
 
-.phrase {
+#phrase {
     color: rgb(255, 196, 0);
     font-size: 50px;
     text-align: center;

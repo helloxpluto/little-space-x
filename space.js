@@ -19,21 +19,21 @@ let phraseRandom = spacewords[Math.floor(Math.random()* spacewords.length)]
 // push phraseRandom into phrase as an array of each letter
 // turn number of letters into blank spaces
 //give those blank spaces an underline or different color background or other style change.
-let phraseBlank = ['']
-let phraseSpaced = ['']
+let phraseSpaced = []
 for (let i = 0; i < phraseRandom.length; i++) {
-    phraseSpaced = phraseRandom[i];
-    phraseBlank[i] = "_"
+    phraseSpaced[i] = (' _ ')
     
-    console.log(phraseSpaced);
 }
-phrase.innerText = `${phraseBlank}`
-
-
-
-
-
-
-function showPhrase() {
+// console.log(phraseSpaced);
+phrase = phraseRandom.split()
+console.log(phrase);
+// let phraseBlank = []
+// let phraseSpaced = []
+// for (let i = 0; i < phraseRandom.length; i++) {
+//     phraseSpaced[i] = phraseRandom[i];
+//     phraseBlank[i] = (' _ ')
    
-} 
+ 
+//     console.log(phraseSpaced);
+// }
+// phrase.innerText = phraseSpaced

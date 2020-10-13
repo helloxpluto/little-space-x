@@ -1,4 +1,4 @@
-// assing all my variables and gets.
+// naming all my variables and gets.
 const fuel = document.querySelectorAll('.fuel');
 
 let phrase = document.querySelector('.phrase');
@@ -8,32 +8,31 @@ const alphabet = document.querySelector('.alphabet');
 const restart = document.querySelector('.restart');
 
 const winTxt = document.querySelector('.winnertxt');
-//word
+
+const notification = document.querySelector('.notify');
+
+const under = document.querySelector('.under');
+
+
+
 
 // make a words array.
 let words = [
 	'space',
 	'earth',
-	'solar system',
 	'jupiter',
 	'mars',
-	'quartermoon',
 	'neptune',
 	'moon',
 	'moon',
 	'mercury',
 	'pluto',
-	'halfmoon',
 	'saturn',
 	'venus',
-	'crescentmoon',
 	'uranus',
 	'planet',
-	'axialtilt',
-	'asteroidbelt',
 	'asteroid',
 	'blackhole',
-	'bigbangtheory',
 	'astronaut',
 	'comet',
 	'binarystar',
@@ -45,19 +44,15 @@ let words = [
 	'deepspace',
 	'cosmonaut',
 	'cosmos',
-	'dwarfplanet',
 	'crater',
 	'equinox',
-	'innerplanets',
 	'eclipse',
 	'ecliptic',
-	'uuuplanets',
+	'planets',
 	'galaxy',
 	'lunar',
-	'fallingstar',
 	'meteorite',
 	'meteor',
-	'meteorshower',
 	'meteoroid',
 	'lens',
 	'gravity',
@@ -66,10 +61,8 @@ let words = [
 	'milkyway',
 	'mass',
 	'magnitude',
-	'outerplanets',
 	'nebula',
 	'orbit',
-	'shootingstar',
 	'rocket',
 	'solar',
 	'exploration',
@@ -80,18 +73,13 @@ let words = [
 	'equinox',
 	'sky',
 	'satellite',
-	'solar system',
-	'new moon',
 	'penumbra',
-	'solar wind',
 	'light',
 	'rings',
 	'observatory',
-	'phase',
 	'orbital',
 	'universe',
 	'zodiac',
-	'spacestation',
 	'sun',
 	'starlight',
 	'telescope',
@@ -99,17 +87,20 @@ let words = [
 
 // set up a mathfloor math random on the array of spacewords call the output of that phraseRandom
 let phraseRandom = words[Math.floor(Math.random() * words.length)];
-// console.log(phraseRandom);
 
 // push phraseRandom into phrase as an array of each letter
 // turn number of letters into blank spaces
 //give those blank spaces an underline or different color background or other style change.
-// let phraseSpaced = [];
-// for (let i = 0; i < phraseRandom.length; i++) {
-// 	phraseSpaced[i] = ' _ ';
-// }
-const rightLetters = [' '];
-const wrongLetters = [' '];
+
+let underline = [' _ '];
+let underlineNum = [];
+for (let i = 0; i < phraseRandom.length; i++) {
+	underlineNum[i] = underline.join(underline);
+	under.innerText = underlineNum.join('');
+}
+
+//created arrays for wrong and right lettters
+
 function displayPhrase() {
 	phrase.innerHTML = `${phraseRandom
 		.split('')
@@ -124,8 +115,29 @@ function displayPhrase() {
     `;
 	const innerPhrase = phrase.innerText.replace(/\n/g, '');
 	if (innerPhrase === phraseRandom) {
-		finalMessage.innerText = 'Congradulations!';
+		winTxt.innerText = 'Congradulations!';
 	}
+}
+
+const rightLetters = [];
+
+const wrongLetters = [];
+
+function updateWrongLetter() {
+	wrongLetters.innerhtml = `
+	${wrongLetters.length > 0 ? '<p>wrong</p>' : ''}
+	${wrongLetters.map((letter) => `span${letter}</span>`)}
+	`;
+
+	fuel.forEach((cell, index) => {
+		const errors = wrongLetters.length;
+
+		if (index < errors) {
+			cell.style.display = 'block';
+		} else {
+			cell.style.display = 'none';
+		}
+	});
 }
 
 function showNotification() {
@@ -152,8 +164,7 @@ alphabet.addEventListener('click', (event) => {
 			showNotification();
 		}
 	}
-	
 });
 
 displayPhrase();
-console.log(rightLetters);
+console.log(wrongLetters);

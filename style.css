@@ -32,16 +32,18 @@ header h2 {
 
 .phrase {
 	margin-top: 3rem;
-	margin-bottom: -2rem;
+	margin-bottom: -4rem;
 	text-align: center;
 	color: rgb(255, 196, 0);
 }
 .under {
 	border-bottom: dashed 1px rgb(255, 196, 0);
 	text-align: center;
-	font-size: 45px;
+	font-size: 49px;
 	color: rgb(255, 196, 0);
-	margin: 1rem 3rem;
+	padding-top: 50px;
+	margin: 0rem 3rem;
+	background-color: rgb(98, 23, 105);
 }
 
 .alphabet {
@@ -56,10 +58,22 @@ header h2 {
 	font-size: 25px;
 	color: white;
 	background-color: rgb(84, 35, 107);
+	margin: 5px;
 }
 
 .buttons:active {
 	background-color: chartreuse;
+	color: rgb(84, 35, 107);
+	transform: scale(-25%);
+}
+
+.buttons:hover {
+	outline: 0px;
+	background-color: rgba(255, 196, 0);
+}
+
+.buttons:enabled {
+	box-shadow: 5px 5px 1px 1px rgba(255, 196, 0, 0.842);
 }
 
 .restart {
@@ -94,7 +108,7 @@ header h2 {
 	text-align: right;
 	font-size: 18px;
 	color: rgb(255, 196, 0);
-	padding: 1rem 3rem;
+	padding: 0rem 3rem;
 }
 
 .letter {
@@ -123,7 +137,7 @@ header h2 {
 }
 
 .popup-container {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.6);
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -136,7 +150,7 @@ header h2 {
 }
 
 .popup {
-	background-color: seashell;
+	background-color: rgba(104, 134, 180, 0.5);
 	border-radius: 8px;
 	border: 5px solid;
 	box-shadow: 0 15px 15px 5px black;
@@ -145,35 +159,15 @@ header h2 {
 
 .popup button {
 	cursor: pointer;
-	background-color: rgb(238, 238, 252);
-	color: rgb(255, 196, 0);
+	background-color: rgba(186, 186, 243, 0.8);
+	color: rgb(84, 35, 107);
 	margin-top: 20px;
 	margin-left: 5rem;
 	padding: 15px;
 	font-size: 16px;
+	font-weight: 900;
 }
 
 .popup button:active {
 	transform: scale(0.98);
 }
-
-.notification-container {
-	background: rgba(0, 0, 0, 0.3);
-	border-radius: 10px 10px 0 0;
-	padding: 15px 20px;
-	position: absolute;
-	bottom: -225px;
-	left: 45%;
-	transition: 0.3s ease-in-out;
-	color: white;
-}
-
-.notification-container p {
-	margin: 0;
-}
-
-.notificatiion-container.show {
-	transform: translateY(-50px);
-}
-
-

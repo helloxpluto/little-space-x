@@ -156,7 +156,7 @@ alphabet.addEventListener('click', (event) => {
 			updateWrongLetters();
 		}
 	}
-	if (phraseRandom.length === rightLetters.length) {
+	if (underlineNum.length === rightLetters.length) {
 		finalMessage.innerText = 'YOU WON !!';
 		popup.style.display = 'flex';
 	}

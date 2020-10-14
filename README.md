@@ -38,3 +38,8 @@ MVP Goals
 -i would like to have a dark and light style modes of the game so that it wont hurt my eyes.
 -i would like to have an animation of the rocket flying away when i win.
 -i would like there to be a list of words/phrases that will replace the word/phrase i have to guess.
+
+##unsolved problems && major hurdles.
+
+-i was able to overcome most hurdles i found in the way by google
+-i wanted to add more motion and animation through css but time did not permit.

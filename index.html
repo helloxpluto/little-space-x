@@ -8,29 +8,37 @@
 		<title>Little-Space-X</title>
 	</head>
 	<body>
+    <div class="game">
+    
 		<header>
             <h1 class="title">LITTLE - SPACE - X</h1>
             <h2 class="subtitle">Help mr Spacey make it home!</h2>
         </header>
         <div><h2 class = "ftext">fuel lv .</h2></div>
-        <span class = "fuel">
-            
-            <div class="cell" value="1" >1</div>
-            <div class="cell" value="2">2</div>
-            <div class="cell" value="3">3</div>
-            <div class="cell" value="4">4</div>
-            <div class="cell" value="5">5</div>
-            <div class="cell" value="6">6</div>
-            <div class="cell" value="7">7</div>
-            <div class="cell" value="8">8</div>
-        </span>
+             <div class = "fuel-container">
 
-            <div class = "phraseHolder">
-                <p class = "phrase"></p>
+                 <span class = "fuel">
+                    
+                    <div class="cell" value="1" >1</div>
+                    <div class="cell" value="2">2</div>
+                    <div class="cell" value="3">3</div>
+                    <div class="cell" value="4">4</div>
+                    <div class="cell" value="5">5</div>
+                    <div class="cell" value="6">6</div>
+                    <div class="cell" value="7">7</div>
+                    <div class="cell" value="8">8</div>
+                </span>
+             </div>
             
-                <p class = "under"></p>
+        
+
+            <div class = "phrase" id="phrase" ">
+                
+            
+                
 
             </div>
+            <p class = "under"></p>
         
         <p>
             
@@ -63,7 +71,26 @@
                 <button class="buttons" type="submit" value="z">z</button>
                 </div>
             <button onclick= "window.location.reload();" class = "restart">START / RESET</button>
+            <div class="wrong-letter-container" >
+                <div class="wrong-letters">
+                    <p></p>
+                    <span></span>
+                </div>
+            </div>
         </p>
-        <p class = "winnertxt"> </p>
+    </div>
+    
+    <div class="popup-container" id="popup-container">
+        <div class="popup">
+            <h2 id="final-message" >YOU WON. PLAY AGAIN!!</h2>
+            <button onclick= "window.location.reload();" class = "popup-button"> click to restart</button>
+
+        </div>
+    </div>
+
+    <div class="notification-container" id="notification-container">
+    <p>you enterd that letter already!</p>
+    </div>
+       
 	</body>
 </html>

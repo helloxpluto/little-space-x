@@ -10,6 +10,14 @@
 ## Wire Frames
 ![bab85200-0944-11eb-9887-e5df97e15d2b.jpg](https://media.git.generalassemb.ly/user/30906/files/bab85200-0944-11eb-9887-e5df97e15d2b)
 
+## app picture
+![apppic.png](https://user-images.githubusercontent.com/70493561/95954950-f58d1080-0db0-11eb-8094-6554f9d53dc8.png)
+
+## concepts
+
+![Screen Shot 2020-10-14 at 12 09 59 AM](https://user-images.githubusercontent.com/70493561/95955397-9f6c9d00-0db1-11eb-9f7f-2c9db923f3d5.png)
+![Untitled_Artwork 5](https://user-images.githubusercontent.com/70493561/95955541-d93da380-0db1-11eb-9e45-e48418e3a939.png)
+
 
 ## User Stories
 As a user i need to be able to start && || restart the game.

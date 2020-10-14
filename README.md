@@ -41,5 +41,17 @@ MVP Goals
 
 ##unsolved problems && major hurdles.
 
--i was able to overcome most hurdles i found in the way by google
+-i was able to overcome most hurdles i found in the way by google and youtube
 -i wanted to add more motion and animation through css but time did not permit.
+-my major hurdle was getting the text to apear back on the screen which i solved by watching various tutorials on youtube.com
+
+## sources
+#youtube.com
+-freecodecamp
+-traversyMedia
+-technomac
+-sarahshagam
+
+w3schools
+
+i learned alot from this project and plan on coming back to add more funcionalty and motion graphics.

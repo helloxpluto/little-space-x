@@ -28,7 +28,7 @@ let phraseRandom = words[Math.floor(Math.random() * words.length)];
 let underline = [' _ '];
 let underlineNum = [];
 for (let i = 0; i < phraseRandom.length; i++) {
-	underlineNum[i] = underline.join(underline);
+	underlineNum[i] = underline.join('_');
 	under.innerText = underlineNum.join('');
 }
 
@@ -44,7 +44,7 @@ function displayPhrase() {
 		.map(
 			(letter) => `
                 <span class = "letter">
-                  ${rightLetters.includes(letter) ? letter : ''}
+                  ${rightLetters.includes(letter) ? letter : '_'}
                 </span>
             `
 		)
